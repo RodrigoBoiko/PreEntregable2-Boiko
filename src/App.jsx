@@ -1,11 +1,14 @@
-import HeroSection from "./components/HeroSection"
-import Navbar from "./components/Navbar"
+import { useState } from 'react'
+import './App.css'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
-function App() {
-
+function App () {
   return (
-    <><Navbar />
-    <HeroSection /></>
+    <div className='container m-auto max-w-7xl'>
+      <NavBar />
+      <ItemListContainer greeting='Bienvenidos! 👋' />
+    </div>
   )
 }
 
